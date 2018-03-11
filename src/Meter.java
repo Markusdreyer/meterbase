@@ -34,7 +34,7 @@ public class Meter {
         return isWorking;
     }
 
-    public void setWorking(boolean working) {
+    public void setIsWorking(boolean working) {
         isWorking = working;
     }
 

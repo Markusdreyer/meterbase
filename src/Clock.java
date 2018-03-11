@@ -20,7 +20,7 @@ public class Clock extends Meter {
 
     @Override
     public String toString() {
-        return "Registration Number: " + getRegNr() + "\nPlacement Id: " + getPlacementId() + "\nIs Working: " + getIsWorking() + "\nAccuracy : " + accuracy + "\n";
+        return this.getClass().getName() +  "\nRegistration Number: " + getRegNr() + "\nPlacement Id: " + getPlacementId() + "\nIs Working: " + getIsWorking() + "\nAccuracy : " + accuracy + " seconds" + "\n";
     }
 
     @Override

@@ -9,9 +9,7 @@ public class MeterArchive {
 
 
     public void testAddInstruments() {
-        meterList.add(new Clock("K1234", "R24H3", true, 2.2));
-        meterList.add(new Weight("HM239", "R39H1", true, 1000, 0.5));
-        meterList.add(new Thermometer("SM384", "R17H4", true, -273.15, 27));
+
     }
 
     public void showList() {
@@ -21,19 +19,39 @@ public class MeterArchive {
     }
 
 
-    public void getInstrument(String regNr){
+    public String getInstrument(String regNr){
         for(Meter m : meterList) {
             if(regNr == m.getRegNr()) {
-                System.out.println(m.toString());
+                return m.toString();
             }
         }
+        return null;
     }
 
     public boolean deleteInstrument(String regNr) {
         for(Meter m : meterList) {
             if (regNr == m.getRegNr()) {
                 meterList.remove(m);
-                System.out.println("Successfully deleted instrument with regNr " + regNr);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean changePlacement(String regNr, String placementId) {
+        for(Meter m : meterList) {
+            if(regNr == m.getRegNr()) {
+                m.setPlacementId(placementId);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean changeState(String regNr, boolean isWorking) {
+        for(Meter m : meterList) {
+            if(regNr == m.getRegNr()) {
+                m.setIsWorking(isWorking);
                 return true;
             }
         }

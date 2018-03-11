@@ -5,7 +5,7 @@ public class Weight extends Meter {
     public Weight(String regNr, String placementId, boolean isWorking, double maximumLoad, double minimumLoad) {
         super(regNr, placementId, isWorking);
         this.maximumLoad = maximumLoad;
-        this.maximumLoad = minimumLoad;
+        this.minimumLoad = minimumLoad;
     }
 
     public Weight() {
@@ -30,7 +30,7 @@ public class Weight extends Meter {
 
     @Override
     public String toString() {
-        return "Registration Number: " + getRegNr() + "\nPlacement Id: " + getPlacementId() + "\nIs Working: " + getIsWorking() + "\nMaximum Load: " + maximumLoad + "\nMinimum Load: " + minimumLoad + "\n";
+        return this.getClass().getName() +  "\nRegistration Number: " + getRegNr() + "\nPlacement Id: " + getPlacementId() + "\nIs Working: " + getIsWorking() + "\nMaximum Load: " + maximumLoad + " gram" + "\nMinimum Load: " + minimumLoad + " gram" + "\n";
     }
 
     @Override

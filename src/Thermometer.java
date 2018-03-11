@@ -30,7 +30,7 @@ public class Thermometer extends Meter {
 
     @Override
     public String toString() {
-        return "Registration Number: " + getRegNr() + "\nPlacement Id: " + getPlacementId() + "\nIs Working: " + getIsWorking() + "\nLowest Temperature: " + lowestTemp + "\nHighest Temperature: " + highestTemp + "\n";
+        return this.getClass().getName() +  "\nRegistration Number: " + getRegNr() + "\nPlacement Id: " + getPlacementId() + "\nIs Working: " + getIsWorking() + "\nLowest Temperature: " + lowestTemp + " celsius" + "\nHighest Temperature: " + highestTemp + " celsius" + "\n";
     }
 
     @Override
