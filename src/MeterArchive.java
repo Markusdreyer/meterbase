@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 
@@ -8,8 +7,8 @@ public class MeterArchive {
     List<Meter> meterList = new ArrayList<Meter>();
 
 
-    public void testAddInstruments() {
-
+    public void addInstrument(Meter obj) {
+        meterList.add(obj);
     }
 
     public void showList() {

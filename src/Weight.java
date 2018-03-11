@@ -16,7 +16,7 @@ public class Weight extends Meter {
         return maximumLoad;
     }
 
-    public void setMaximumLoad(float maximumLoad) {
+    public void setMaximumLoad(double maximumLoad) {
         this.maximumLoad = maximumLoad;
     }
 
@@ -24,7 +24,7 @@ public class Weight extends Meter {
         return minimumLoad;
     }
 
-    public void setMinimumLoad(float minimumLoad) {
+    public void setMinimumLoad(double minimumLoad) {
         this.minimumLoad = minimumLoad;
     }
 
