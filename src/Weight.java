@@ -1,2 +1,46 @@
-public class Weight {
+public class Weight extends Meter {
+    private double maximumLoad;
+    private double minimumLoad;
+
+    public Weight(String regNr, String placementId, boolean isWorking, double maximumLoad, double minimumLoad) {
+        super(regNr, placementId, isWorking);
+        this.maximumLoad = maximumLoad;
+        this.maximumLoad = minimumLoad;
+    }
+
+    public Weight() {
+
+    }
+
+    public double getMaximumLoad() {
+        return maximumLoad;
+    }
+
+    public void setMaximumLoad(float maximumLoad) {
+        this.maximumLoad = maximumLoad;
+    }
+
+    public double getMinimumLoad() {
+        return minimumLoad;
+    }
+
+    public void setMinimumLoad(float minimumLoad) {
+        this.minimumLoad = minimumLoad;
+    }
+
+    @Override
+    public String toString() {
+        return "Registration Number: " + getRegNr() + "\nPlacement Id: " + getPlacementId() + "\nIs Working: " + getIsWorking() + "\nMaximum Load: " + maximumLoad + "\nMinimum Load: " + minimumLoad + "\n";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Weight weight = (Weight) o;
+
+        if (Double.compare(weight.maximumLoad, maximumLoad) != 0) return false;
+        return Double.compare(weight.minimumLoad, minimumLoad) == 0;
+    }
 }
