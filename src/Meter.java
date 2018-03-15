@@ -1,4 +1,4 @@
-public class Meter {
+public abstract class Meter {
     private String regNr;
     private String placementId;
     private boolean isWorking;

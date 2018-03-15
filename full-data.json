@@ -1,0 +1,23 @@
+{ "instrument1": {
+  "type": "Clock",
+  "registrationNumber": "K1234",
+  "placementId": "R24H3",
+  "isWorking": true,
+  "accuracy": 0.001
+  },
+  "instrument2": {
+    "type": "Weight",
+    "registrationNumber": "HM239",
+    "placementId": "R39H1",
+    "isWorking": true,
+    "maximumLoad": 1000.0,
+    "minimumLoad": 0.1
+  },
+  "instrument3": {
+  "type": "Thermometer",
+  "registrationNumber": "SM384",
+  "placementId": "R17H4",
+  "isWorking": true,
+  "lowestTemperature" : -273.15,
+  "highestTemperature" : 27.0
+}}

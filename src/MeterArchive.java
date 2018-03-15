@@ -3,7 +3,6 @@ import java.util.List;
 
 
 public class MeterArchive {
-    private Meter meter = new Meter();
     List<Meter> meterList = new ArrayList<Meter>();
 
 
@@ -12,6 +11,7 @@ public class MeterArchive {
     }
 
     public void showList() {
+
         for(Meter m : meterList) {
             System.out.println(m.toString());
         }
@@ -28,7 +28,7 @@ public class MeterArchive {
     }
 
     public boolean deleteInstrument(String regNr) {
-        for(Meter m : meterList) {
+        for (Meter m : meterList) {
             if (regNr == m.getRegNr()) {
                 meterList.remove(m);
                 return true;

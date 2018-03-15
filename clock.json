@@ -1,0 +1,7 @@
+{
+  "type": "Clock",
+  "registrationNumber": "K1234",
+  "placementId": "R24H3",
+  "isWorking": true,
+  "accuracy": 0.001
+}
